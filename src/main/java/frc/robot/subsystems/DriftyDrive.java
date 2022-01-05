@@ -25,7 +25,7 @@ public class DriftyDrive extends SubsystemBase{
         sparkMax.setClosedLoopRampRate(0.0);
     }
 
-    private DriftyDrive(){
+    public DriftyDrive(){
         mLeftMaster = SparkMaxFactory.createDefaultSparkMax(1);
         configureSpark(mLeftMaster, true, true);
         mLeftSlave = SparkMaxFactory.createPermanentSlaveSparkMax(2, mLeftMaster);
